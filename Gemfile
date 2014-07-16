@@ -15,6 +15,10 @@ gem 'omniauth-github'
 gem 'simple_form'
 gem 'jquery-turbolinks'
 
+gem 'bourbon', '~>3.2'
+gem 'neat', '1.5.1'
+gem 'refills'
+
 group :development, :test do
   gem 'dotenv-rails'
   gem 'rspec-rails'
