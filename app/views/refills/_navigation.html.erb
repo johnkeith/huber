@@ -5,20 +5,21 @@
     </a>
     <p class="navigation-menu-button" id="js-mobile-menu">MENU</p>
     <div class="nav">
-      <ul id="navigation-menu">
-        <li class="nav-link"><a href="javascript:void(0)">Products</a></li>
-        <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
-        <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
-        <li class="nav-link more"><a href="javascript:void(0)">More</a>
-          <ul class="submenu">
-            <li><a href="javascript:void(0)">Submenu Item</a></li>
-            <li><a href="javascript:void(0)">Another Item</a></li>
-          </ul>
-        </li>
-        
-      </ul>
+      <div class="navigation-tools">
+        <ul id="navigation-menu">
+          <% if current_user %>
+            <li class="nav-link">
+              <%= link_to "Log out", signout_path %>
+            </li>
+          <% else %>
+            <li class="nav-link">
+              <%= link_to "Sign in with Github", create_account_path %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
     </div>
-    <div class="navigation-tools">
+    <!-- <div class="navigation-tools">
       <div class="search-bar">
         <div class="search-and-submit">
           <input type="search" placeholder="Enter Search" />
@@ -29,7 +30,7 @@
       </div>
       <a href="javascript:void(0)" class="sign-up">Sign Up</a>
     </div>
-  </div>
+  </div> -->
 </header>
 
 <script>
