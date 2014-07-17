@@ -1,9 +1,11 @@
 .row
-  .col-md-6.col-md-offset-3
+  .col-md-3
     .portrait-placeholder
-    %form{ role: "form" }
+      %img{ src: "", id: "github-avatar" }
+  .col-md-6
+    %form{ role: "form", id: "onboard-form" }
       .form-group
-        %input{ type: "text", class: "form-control", placeholder: "Your Github username" }
+        %input{ type: "text", class: "form-control", placeholder: "Your Github username", id: "github-username" }
       .form-group
         %select{ class: "form-control", id: "gender-select" }
           %option{ value: "", "disabled" => "disabled", "selected" => "selected" } Select your gender

@@ -6,10 +6,21 @@
     display: inline-block;
   }
 }
-
 .custom-brand {
-  font-size:1.2em;
+  font-size:1.3em;
 }
 .container {
   margin-top:60px;
+}
+.portrait-placeholder {
+  text-align:center;
+  img {
+    border-radius: 50%;
+    border:1px solid #333;
+    width:155px;
+    height:155px;
+  }
+}
+#onboard-form {
+  margin-top:10px;
 }
