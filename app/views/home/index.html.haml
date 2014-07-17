@@ -1,0 +1,16 @@
+.row
+  .col-md-6.col-md-offset-3
+    .portrait-placeholder
+    %form{ role: "form" }
+      .form-group
+        %input{ type: "text", class: "form-control", placeholder: "Your Github username" }
+      .form-group
+        %select{ class: "form-control", id: "gender-select" }
+          %option{ value: "", "disabled" => "disabled", "selected" => "selected" } Select your gender
+          %option{ value: "male", id: "gender-male" } Male
+          %option{ value: "female", id: "gender-female" } Female
+      .form-group
+        %select{ class: "form-control", id: "match-pref-select" }
+          %option{ value: "", "disabled" => "disabled", "selected" => "selected" } Select your preference
+          %option{ value: "men", id: "match-men" } Men
+          %option{ value: "women", id: "match-women" } Women
