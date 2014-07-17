@@ -38,6 +38,7 @@ group :test do
   gem 'valid_attribute'
   gem 'shoulda-matchers'
   gem 'selenium-webdriver'
+  gem 'poltergeist'
 end
 
 group :production do

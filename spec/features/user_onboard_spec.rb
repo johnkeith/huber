@@ -1,7 +1,7 @@
 require_relative '../rails_helper'
 
-feature "user enters basic information on homepage" do
-  scenario "fills in github username" do
+feature "user enters basic information on homepage", js: true do
+  scenario "fills in github username", :vcr do
     visit root_path
     fill_in "Your Github username", with: "johnkeith"
     select "Male", from: "gender-select"
