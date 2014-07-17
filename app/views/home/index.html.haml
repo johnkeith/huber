@@ -4,15 +4,17 @@
       %img{ src: "", id: "github-avatar" }
   .col-md-6
     %form{ role: "form", id: "onboard-form" }
-      .form-group
-        %input{ type: "text", class: "form-control", placeholder: "Your Github username", id: "github-username" }
-      .form-group
-        %select{ class: "form-control", id: "gender-select" }
+      .form-group.form-group-lg#github-username-group
+        %input{ type: "text", class: "form-control input-lg", placeholder: "Your Github username", id: "github-username" }
+      .form-group.form-group-lg#gender-group
+        %select{ class: "form-control input-lg", id: "gender-select" }
           %option{ value: "", "disabled" => "disabled", "selected" => "selected" } Select your gender
           %option{ value: "male", id: "gender-male" } Male
           %option{ value: "female", id: "gender-female" } Female
-      .form-group
-        %select{ class: "form-control", id: "match-pref-select" }
+      .form-group.form-group-lg#match-group
+        %select{ class: "form-control input-lg", id: "match-pref-select" }
           %option{ value: "", "disabled" => "disabled", "selected" => "selected" } Select your preference
           %option{ value: "men", id: "match-men" } Men
           %option{ value: "women", id: "match-women" } Women
+    .form-errors
+      
