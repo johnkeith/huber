@@ -1,3 +1,5 @@
+@import "bootstrap/variables";
+
 .navbar-nav {
   width: 100%;
   text-align: center;
@@ -15,13 +17,24 @@
 .portrait-placeholder {
   text-align:center;
   img {
-    border-radius: 50%;
-    border:1px solid #333;
-    width:180px;
-    height:180px;
+    height:250px;
+    width:250px;
   }
 }
 #onboard-form {
   margin-top:10px;
 }
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
 
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+
+}
